@@ -1,11 +1,11 @@
 package com.registration.tests;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -29,7 +29,7 @@ public class TestBase {
 		
 	if (browser == null) browser = "*chrome";
 		selenium = new DefaultSelenium("localhost", 4444, browser, "http://umagicpro-pp/");
-		final String resultPath = "/Users/su/Selenium2/Results";
+		final String resultPath = "/Users/su/Documents/workspace/selenium-tests/Reports";
 		java.util.Date date = new java.util.Date(System.currentTimeMillis()); //получаем текущую дату для имени файла
 	    final String resultHtmlFileName = resultPath + File.separator + "Result_" + date;
 	    final String resultEncoding = "UTF-8";
@@ -37,7 +37,7 @@ public class TestBase {
 	
 	    LoggingResultsFormatter htmlFormatter = 
 	        new HtmlResultFormatter(loggingWriter, resultEncoding);
-	    htmlFormatter.setScreenShotBaseUri("/Users/su/Selenium2/ScreenShot"); // this is for linking to the screenshots
+	    htmlFormatter.setScreenShotBaseUri("/Users/su/Documents/workspace/selenium-tests/Reports"); // this is for linking to the screenshots
 	    htmlFormatter.setAutomaticScreenshotPath(resultPath);
 	    // wrap HttpCommandProcessor from remote-control
 	    LoggingCommandProcessor myProcessor = 

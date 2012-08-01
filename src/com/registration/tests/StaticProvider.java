@@ -104,8 +104,3 @@ public class StaticProvider {
 				  		  "css=span[name=\"abc-numbers\"]");
 			} */
 		}
-
-		
-		
-
-	 

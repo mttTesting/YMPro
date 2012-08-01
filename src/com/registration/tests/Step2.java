@@ -1,8 +1,8 @@
-package com.registration.tests; 
+package com.registration.tests;
 
-import org.testng.annotations.Test;  
+import org.testng.annotations.Test;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
-import static org.testng.Assert.*;
 
 public class Step2 extends TestBase {
 
@@ -44,7 +44,7 @@ public class Step2 extends TestBase {
 		AssertJUnit.assertEquals(selenium.isElementPresent("id=ui-dialog-title-mConfirmPhone"), true);
 		
 		for (int second = 0;; second++) {
-			if (second >= 60) fail("timeout after click on button 'Подтверждаю'");
+			if (second >= 60) Assert.fail("timeout after click on button 'Подтверждаю'");
 			try { if (selenium.isTextPresent("Неправильный код подтверждения")) break; } catch (Exception e) {}
 			Thread.sleep(1000);
 		} 
@@ -69,7 +69,7 @@ public class Step2 extends TestBase {
 		
 		//Клик по "Подтверждаю" - подтверждение true
 		for(int second = 0;; second++) {
-			if (second >= 60) fail("timeout after click on button 'Подтверждаю'");
+			if (second >= 60) Assert.fail("timeout after click on button 'Подтверждаю'");
             try { if (selenium.isElementPresent("id=ui-dialog-title-mConfirmPhone"))
             		{selenium.click("css=span.phone_confirm_text.conf_text"); break;}
             	}catch(Exception e) {}
@@ -92,7 +92,7 @@ public class Step2 extends TestBase {
 		if(!selenium.isChecked("edit-legal-agreement")){
 			selenium.click("css=span.mycheckbox");
         }        
-		assertTrue(selenium.getEval( "var win = selenium.browserbot.getCurrentWindow();" +
+		AssertJUnit.assertTrue(selenium.getEval( "var win = selenium.browserbot.getCurrentWindow();" +
                 "var element = win.document.getElementById('edit-next');" +
                 "element.disabled;" ).toLowerCase().equals("true"));		
    		
@@ -101,13 +101,13 @@ public class Step2 extends TestBase {
 		if(selenium.isChecked("edit-legal-agreement")){
 			selenium.click("css=span.mycheckbox.mycheckbox_checked");
         }
-		assertTrue(selenium.getEval( "var win = selenium.browserbot.getCurrentWindow();" +
+		AssertJUnit.assertTrue(selenium.getEval( "var win = selenium.browserbot.getCurrentWindow();" +
                 "var element = win.document.getElementById('edit-next');" +
                 "element.disabled;" ).toLowerCase().equals("true"));
 			
 		//Чекбокс выбран, email корректный
 		selenium.click("css=span.mycheckbox");
-		assertTrue(selenium.getEval( "var win = selenium.browserbot.getCurrentWindow();" +
+		AssertJUnit.assertTrue(selenium.getEval( "var win = selenium.browserbot.getCurrentWindow();" +
                 "var element = win.document.getElementById('edit-next');" +
                 "element.disabled;" ).toLowerCase().equals("false"));
 	
@@ -115,14 +115,18 @@ public class Step2 extends TestBase {
 		
 		//Дальше
 		selenium.click("edit-next");
+		
 		for (int second = 0;; second++) {
-			if (second >= 60) fail("timeout after click on button 'Next'");
-			try { if (selenium.isTextPresent("Спасибо за регистрацию. Ваш логин и пароль высланы на указанный email.")) break; } catch (Exception e) {}
-			Thread.sleep(1000);
-		} 
+			if (second >= 30) Assert.fail("timeout");
+				try { if (selenium.isTextPresent("уже зарегистрирован")) 
+				    {System.out.print("Email уже зарегистрирован"); break;}
+				    	else { if (selenium.isTextPresent("Спасибо за регистрацию. Ваш логин и пароль высланы на указанный email"))
+						{AssertJUnit.assertTrue(selenium.isTextPresent("Регистрация прошла успешно")); break;}
+				    	}
+					}	
+				   catch (Exception e) {}	
+				   Thread.sleep(1000);
+				}
 		
 	}
 }
-
-//уже зарегистрирован
-		
