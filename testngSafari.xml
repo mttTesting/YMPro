@@ -5,6 +5,7 @@
   <test name="Test" preserve-order="true">
     <classes>
       <class name="com.registration.tests.Step1"/>
+      <class name="com.registration.tests.Step2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
