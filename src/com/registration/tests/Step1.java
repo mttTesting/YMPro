@@ -1,13 +1,15 @@
 package com.registration.tests;
 
 import org.testng.annotations.Test;
-import org.testng.Assert;
 import org.testng.AssertJUnit;
+
+import com.example.tests.StaticProvider;
 
 public class Step1 extends TestBase {
 
 	@Test (dataProvider = "step1", dataProviderClass = StaticProvider.class)
 	public void testStep1(String town, String tname, String pref, String num) throws Exception {
+		selenium.logComment("Step1 with town = "+town+" tname= "+tname+" pref= "+pref+" num= "+num);
 		selenium.open("http://umagicpro-pp/");
 		selenium.click("id=bHRegisterText");
 		selenium.waitForPageToLoad("30000");
@@ -18,7 +20,7 @@ public class Step1 extends TestBase {
 		selenium.click(town); //выбрать город
 		
 		for (int second = 0;; second++) {
-			if (second >= 60) Assert.fail("timeout");
+			if (second >= 60) AssertJUnit.fail("timeout");
 			try { if (selenium.isTextPresent(pref)) break; } catch (Exception e) {}
 			Thread.sleep(1000);
 		}
@@ -33,6 +35,10 @@ public class Step1 extends TestBase {
 	
 	@Test (dataProvider = "step1find", dataProviderClass = StaticProvider.class)	
 	public void testStep1Find(String find, String result) throws Exception {
+		while (selenium.isAlertPresent()) { 
+		    selenium.getAlert(); 
+		} 
+		selenium.logComment("Step1 with find = "+find+" result= "+result);
 		selenium.open("http://umagicpro-pp/");
 		selenium.click("id=bHRegisterText");
 		selenium.waitForPageToLoad("30000");
@@ -43,7 +49,7 @@ public class Step1 extends TestBase {
 		selenium.keyPress("id=edit-phone-mask-submit", "\\13");
 		
 		for (int second = 0;; second++) {
-			if (second >= 30) Assert.fail("timeout");
+			if (second >= 30) AssertJUnit.fail("timeout during the selection num");
 				try { if (selenium.isTextPresent("Нет свободных номеров")) 
 				    {System.out.print("Нет свободных номеров"); break;}
 				    	else { if (selenium.isTextPresent(result))

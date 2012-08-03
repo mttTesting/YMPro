@@ -1,4 +1,10 @@
 eclipse.preferences.version=1
+encoding//src/com/example/tests/SeleniumHelper.java=UTF-8
+encoding//src/com/example/tests/StaticProvider.java=UTF-8
+encoding//src/com/example/tests/Step1.java=UTF-8
+encoding//src/com/example/tests/Step2.java=UTF-8
+encoding//src/com/example/tests/TestBase.java=UTF-8
+encoding//src/com/registration/tests/SeleniumHelper.java=UTF-8
 encoding//src/com/registration/tests/StaticProvider.java=UTF-8
 encoding//src/com/registration/tests/Step1.java=UTF-8
 encoding//src/com/registration/tests/Step2.java=UTF-8

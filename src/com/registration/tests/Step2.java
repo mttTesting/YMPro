@@ -1,14 +1,17 @@
 package com.registration.tests;
 
-import org.testng.annotations.Test;
-import org.testng.Assert;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+
+import com.example.tests.StaticProvider;
 
 public class Step2 extends TestBase {
 
 	@Test  (dataProvider = "step2", dataProviderClass = StaticProvider.class)
 	public void testStep2(String lastn, String name, String middlen, String mail, String sfera, String num) throws Exception {
-		selenium.open("http://umagicpro-pp/user/register/step1");
+		selenium.logComment("Step2 with lastn = "+lastn+" name= "+name+" middlen= "+middlen+" mail= "+mail+" sfera= "+sfera+" num= "+num);
+		selenium.open("http://umagicpro-pp/");
+		selenium.click("id=bHRegisterText");
 		selenium.waitForPageToLoad("30000");
 		AssertJUnit.assertEquals(selenium.getText("css=div.content_body_header"), "Выбор номера");
 		AssertJUnit.assertFalse(selenium.isElementPresent("id=error"));
@@ -44,7 +47,7 @@ public class Step2 extends TestBase {
 		AssertJUnit.assertEquals(selenium.isElementPresent("id=ui-dialog-title-mConfirmPhone"), true);
 		
 		for (int second = 0;; second++) {
-			if (second >= 60) Assert.fail("timeout after click on button 'Подтверждаю'");
+			if (second >= 60) AssertJUnit.fail("timeout after click on button 'Подтверждаю'");
 			try { if (selenium.isTextPresent("Неправильный код подтверждения")) break; } catch (Exception e) {}
 			Thread.sleep(1000);
 		} 
@@ -69,7 +72,7 @@ public class Step2 extends TestBase {
 		
 		//Клик по "Подтверждаю" - подтверждение true
 		for(int second = 0;; second++) {
-			if (second >= 60) Assert.fail("timeout after click on button 'Подтверждаю'");
+			if (second >= 60) AssertJUnit.fail("timeout after click on button 'Подтверждаю'");
             try { if (selenium.isElementPresent("id=ui-dialog-title-mConfirmPhone"))
             		{selenium.click("css=span.phone_confirm_text.conf_text"); break;}
             	}catch(Exception e) {}
@@ -117,7 +120,7 @@ public class Step2 extends TestBase {
 		selenium.click("edit-next");
 		
 		for (int second = 0;; second++) {
-			if (second >= 30) Assert.fail("timeout");
+			if (second >= 30) AssertJUnit.fail("timeout");
 				try { if (selenium.isTextPresent("уже зарегистрирован")) 
 				    {System.out.print("Email уже зарегистрирован"); break;}
 				    	else { if (selenium.isTextPresent("Спасибо за регистрацию. Ваш логин и пароль высланы на указанный email"))
