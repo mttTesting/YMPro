@@ -3,11 +3,11 @@
 <suite name="Failed suite [selenium-tests by packages]">
   <test name="com.example.tests(failed)" preserve-order="true">
     <classes>
-      <class name="com.example.tests.Step2">
+      <class name="com.example.tests.Step2Ex">
         <methods>
           <include name="testStep2"/>
         </methods>
-      </class> <!-- com.example.tests.Step2 -->
+      </class> <!-- com.example.tests.Step2Ex -->
       <class name="com.example.tests.Step1">
         <methods>
           <include name="tearDown"/>

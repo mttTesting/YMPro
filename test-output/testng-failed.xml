@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" name="Failed suite [Suite]" parallel="methods">
-  <parameter name="browser" value="*safari"/>
-  <test name="Test(failed)" parallel="methods" preserve-order="true">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="com.example.tests.Step1">
+      <class name="com.exit.tests.Administrator">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testStep1Find" invocation-numbers="0 1 2"/>
-          <include name="testStep1" invocation-numbers="0 1 2 3 4 5 6"/>
-        </methods>
-      </class> <!-- com.example.tests.Step1 -->
-      <class name="com.example.tests.Step2">
-        <methods>
-          <include name="testStep2" invocation-numbers="0"/>
+          <include name="testRestorPassTrue" invocation-numbers="0 1"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- com.example.tests.Step2 -->
+      </class> <!-- com.exit.tests.Administrator -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

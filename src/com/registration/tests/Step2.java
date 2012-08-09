@@ -3,13 +3,11 @@ package com.registration.tests;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
-import com.example.tests.StaticProvider;
+public class Step2 extends TestBaseReg {
 
-public class Step2 extends TestBase {
-
-	@Test  (dataProvider = "step2", dataProviderClass = StaticProvider.class)
+	@Test  (dataProvider = "step2", dataProviderClass = DataProviderReg.class)
 	public void testStep2(String lastn, String name, String middlen, String mail, String sfera, String num) throws Exception {
-		selenium.logComment("Step2 with lastn = "+lastn+" name= "+name+" middlen= "+middlen+" mail= "+mail+" sfera= "+sfera+" num= "+num);
+		selenium.logComment("Step2Ex with lastn = "+lastn+" name= "+name+" middlen= "+middlen+" mail= "+mail+" sfera= "+sfera+" num= "+num);
 		selenium.open("http://umagicpro-pp/");
 		selenium.click("id=bHRegisterText");
 		selenium.waitForPageToLoad("30000");

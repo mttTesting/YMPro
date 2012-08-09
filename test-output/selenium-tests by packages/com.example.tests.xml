@@ -8,8 +8,8 @@
 	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
 	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
 	at com.thoughtworks.selenium.DefaultSelenium.close(DefaultSelenium.java:427)
-	at com.example.tests.SeleniumHelper.dismissSelenium(SeleniumHelper.java:76)
-	at com.example.tests.TestBase.tearDown(TestBase.java:30)
+	at com.example.tests.SeleniumHelperEx.dismissSelenium(SeleniumHelper.java:76)
+	at com.example.tests.TestBaseEx.tearDown(TestBase.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -57,16 +57,16 @@
   <testcase name="@AfterMethod tearDown" time="0.0" classname="com.example.tests.Step1">
     <skipped/>
   </testcase> <!-- @AfterMethod tearDown -->
-  <testcase name="@BeforeMethod setUp" time="0.0" classname="com.example.tests.Step2">
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="com.example.tests.Step2Ex">
     <skipped/>
   </testcase> <!-- @BeforeMethod setUp -->
-  <testcase name="@AfterMethod tearDown" time="0.0" classname="com.example.tests.Step2">
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="com.example.tests.Step2Ex">
     <skipped/>
   </testcase> <!-- @AfterMethod tearDown -->
-  <testcase name="@BeforeMethod setUp" time="0.0" classname="com.example.tests.Step2">
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="com.example.tests.Step2Ex">
     <skipped/>
   </testcase> <!-- @BeforeMethod setUp -->
-  <testcase name="@AfterMethod tearDown" time="0.0" classname="com.example.tests.Step2">
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="com.example.tests.Step2Ex">
     <skipped/>
   </testcase> <!-- @AfterMethod tearDown -->
   <testcase name="testStep1" time="21.485" classname="com.example.tests.Step1"/>
@@ -120,10 +120,10 @@
   <testcase name="testStep1Find" time="0.0" classname="com.example.tests.Step1">
     <skipped/>
   </testcase> <!-- testStep1Find -->
-  <testcase name="testStep2" time="0.0010" classname="com.example.tests.Step2">
+  <testcase name="testStep2" time="0.0010" classname="com.example.tests.Step2Ex">
     <skipped/>
   </testcase> <!-- testStep2 -->
-  <testcase name="testStep2" time="0.0010" classname="com.example.tests.Step2">
+  <testcase name="testStep2" time="0.0010" classname="com.example.tests.Step2Ex">
     <skipped/>
   </testcase> <!-- testStep2 -->
 </testsuite> <!-- com.example.tests -->
