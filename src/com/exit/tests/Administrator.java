@@ -1,11 +1,7 @@
 package com.exit.tests;
 
-import org.openqa.selenium.internal.seleniumemulation.IsTextPresent;
-import org.openqa.selenium.lift.find.LinkFinder;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-
-import com.sun.jndi.toolkit.url.Uri;
 
 public class Administrator extends TestBaseExit {
 	
@@ -110,9 +106,8 @@ public class Administrator extends TestBaseExit {
 		AssertJUnit.assertTrue("Subject: Восстановление пароля", true);
 		AssertJUnit.assertTrue("Вы можете войти в личный кабинет, используя ссылку, указанную ниже", true);
 		AssertJUnit.assertTrue("link=exact:http://umagicpro-pp/user/reset/*", true);
-		
-		public void toPage() {
-		clickOn(xpath(""));
+		clickOn(xpath("link=exact:http://umagicpro-pp/user/reset/*"));
 		}
+
 }
 

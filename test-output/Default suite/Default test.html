@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 09 16:37:38 MSK 2012</td>
+<td>Started on:</td><td>Fri Aug 10 15:57:19 MSK 2012</td>
 </tr>
-<tr><td>Total time:</td><td>42 seconds (42277 ms)</td>
+<tr><td>Total time:</td><td>27 seconds (27041 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.exit.tests.Administrator.testRestorPassTrue()'><b>testRestorPassTrue</b><br>Test class: com.exit.tests.Administrator<br>Parameters: 100102</td>
-<td><div><pre>com.thoughtworks.selenium.SeleniumException: ERROR: Element link=https://r.mail.yandex.net/url/yFGeiXrIhqkBih3ZxxiHWQ,1344509935/umagicpro-pp%2Fuser%2Freset%2F463%2F1344333893%2F90c767fb58489d0d193f05635371045a not found
-	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
-	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
-	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
-	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:193)
-	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:112)
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.lift.find.XPathFinder.extractFrom(XPathFinder.java:38)
+	at org.openqa.selenium.lift.find.XPathFinder.extractFrom(XPathFinder.java:1)
+	at org.openqa.selenium.lift.find.BaseFinder.findFrom(BaseFinder.java:37)
+	at org.openqa.selenium.lift.WebDriverTestContext.findOneElementTo(WebDriverTestContext.java:114)
+	at org.openqa.selenium.lift.WebDriverTestContext.clickOn(WebDriverTestContext.java:95)
+	at com.exit.tests.TestBaseExit.clickOn(TestBaseExit.java:50)
+	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:109)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -106,13 +108,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace616624620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace616624620'><pre>com.thoughtworks.selenium.SeleniumException: ERROR: Element link=https://r.mail.yandex.net/url/yFGeiXrIhqkBih3ZxxiHWQ,1344509935/umagicpro-pp%2Fuser%2Freset%2F463%2F1344333893%2F90c767fb58489d0d193f05635371045a not found
-	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
-	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
-	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
-	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:193)
-	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:112)
+</pre></div><a href='#' onClick='toggleBox("stack-trace921745400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace921745400'><pre>java.lang.NullPointerException
+	at org.openqa.selenium.lift.find.XPathFinder.extractFrom(XPathFinder.java:38)
+	at org.openqa.selenium.lift.find.XPathFinder.extractFrom(XPathFinder.java:1)
+	at org.openqa.selenium.lift.find.BaseFinder.findFrom(BaseFinder.java:37)
+	at org.openqa.selenium.lift.WebDriverTestContext.findOneElementTo(WebDriverTestContext.java:114)
+	at org.openqa.selenium.lift.WebDriverTestContext.clickOn(WebDriverTestContext.java:95)
+	at com.exit.tests.TestBaseExit.clickOn(TestBaseExit.java:50)
+	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:109)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -138,16 +142,16 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>18</td>
-<td>com.exit.tests.Administrator@66e64686</td></tr>
+<td>12</td>
+<td>com.exit.tests.Administrator@671381e7</td></tr>
 <tr>
 <td title='com.exit.tests.Administrator.testRestorPassTrue()'><b>testRestorPassTrue</b><br>Test class: com.exit.tests.Administrator<br>Parameters: SqaTest@yandex.ru</td>
-<td><div><pre>com.thoughtworks.selenium.SeleniumException: ERROR: Element link=https://r.mail.yandex.net/url/yFGeiXrIhqkBih3ZxxiHWQ,1344509935/umagicpro-pp%2Fuser%2Freset%2F463%2F1344333893%2F90c767fb58489d0d193f05635371045a not found
+<td><div><pre>com.thoughtworks.selenium.SeleniumException: ERROR: Element id=b-mail-domik-username11 not found
 	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
 	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
 	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
-	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:193)
-	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:112)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:317)
+	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -172,13 +176,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1911628635", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1911628635'><pre>com.thoughtworks.selenium.SeleniumException: ERROR: Element link=https://r.mail.yandex.net/url/yFGeiXrIhqkBih3ZxxiHWQ,1344509935/umagicpro-pp%2Fuser%2Freset%2F463%2F1344333893%2F90c767fb58489d0d193f05635371045a not found
+</pre></div><a href='#' onClick='toggleBox("stack-trace1742814727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1742814727'><pre>com.thoughtworks.selenium.SeleniumException: ERROR: Element id=b-mail-domik-username11 not found
 	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
 	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
 	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
-	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:193)
-	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:112)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:317)
+	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -204,8 +208,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>11</td>
-<td>com.exit.tests.Administrator@66e64686</td></tr>
+<td>9</td>
+<td>com.exit.tests.Administrator@671381e7</td></tr>
 </table><p>
 </body>
 </html>

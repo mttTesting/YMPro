@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42277" started-at="2012-08-09T12:37:38Z" finished-at="2012-08-09T12:38:20Z">
+  <suite name="Default suite" duration-ms="27041" started-at="2012-08-10T11:57:19Z" finished-at="2012-08-10T11:57:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42277" started-at="2012-08-09T12:37:38Z" finished-at="2012-08-09T12:38:20Z">
+    <test name="Default test" duration-ms="27041" started-at="2012-08-10T11:57:19Z" finished-at="2012-08-10T11:57:46Z">
       <class name="com.exit.tests.Administrator">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@66e64686]" name="setUp" is-config="true" duration-ms="5577" started-at="2012-08-09T16:37:38Z" finished-at="2012-08-09T16:37:43Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@671381e7]" name="setUp" is-config="true" duration-ms="4873" started-at="2012-08-10T15:57:19Z" finished-at="2012-08-10T15:57:24Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,16 +16,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@66e64686]" name="setUp" is-config="true" duration-ms="7" started-at="2012-08-09T16:37:43Z" finished-at="2012-08-09T16:37:43Z">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testRestorPassTrue(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@66e64686]" name="testRestorPassTrue" duration-ms="18026" started-at="2012-08-09T16:37:43Z" data-provider="restorPassTrue" finished-at="2012-08-09T16:38:01Z">
+        <test-method status="FAIL" signature="testRestorPassTrue(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@671381e7]" name="testRestorPassTrue" duration-ms="12043" started-at="2012-08-10T15:57:24Z" data-provider="restorPassTrue" finished-at="2012-08-10T15:57:36Z">
           <params>
             <param index="0">
               <value>
@@ -33,17 +24,16 @@
               </value>
             </param>
           </params>
-          <exception class="com.thoughtworks.selenium.SeleniumException">
-            <message>
-              <![CDATA[ERROR: Element link=https://r.mail.yandex.net/url/yFGeiXrIhqkBih3ZxxiHWQ,1344509935/umagicpro-pp%2Fuser%2Freset%2F463%2F1344333893%2F90c767fb58489d0d193f05635371045a not found]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element link=https://r.mail.yandex.net/url/yFGeiXrIhqkBih3ZxxiHWQ,1344509935/umagicpro-pp%2Fuser%2Freset%2F463%2F1344333893%2F90c767fb58489d0d193f05635371045a not found
-	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
-	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
-	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
-	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:193)
-	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:112)
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.lift.find.XPathFinder.extractFrom(XPathFinder.java:38)
+	at org.openqa.selenium.lift.find.XPathFinder.extractFrom(XPathFinder.java:1)
+	at org.openqa.selenium.lift.find.BaseFinder.findFrom(BaseFinder.java:37)
+	at org.openqa.selenium.lift.WebDriverTestContext.findOneElementTo(WebDriverTestContext.java:114)
+	at org.openqa.selenium.lift.WebDriverTestContext.clickOn(WebDriverTestContext.java:95)
+	at com.exit.tests.TestBaseExit.clickOn(TestBaseExit.java:50)
+	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:109)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -70,24 +60,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRestorPassTrue -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.exit.tests.Administrator@66e64686]" name="tearDown" is-config="true" duration-ms="664" started-at="2012-08-09T16:38:01Z" finished-at="2012-08-09T16:38:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@66e64686]" name="setUp" is-config="true" duration-ms="5706" started-at="2012-08-09T16:38:02Z" finished-at="2012-08-09T16:38:08Z">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testRestorPassTrue(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@66e64686]" name="testRestorPassTrue" duration-ms="11761" started-at="2012-08-09T16:38:08Z" data-provider="restorPassTrue" finished-at="2012-08-09T16:38:20Z">
+        <test-method status="FAIL" signature="testRestorPassTrue(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@671381e7]" name="testRestorPassTrue" duration-ms="9972" started-at="2012-08-10T15:57:36Z" data-provider="restorPassTrue" finished-at="2012-08-10T15:57:46Z">
           <params>
             <param index="0">
               <value>
@@ -97,15 +74,15 @@
           </params>
           <exception class="com.thoughtworks.selenium.SeleniumException">
             <message>
-              <![CDATA[ERROR: Element link=https://r.mail.yandex.net/url/yFGeiXrIhqkBih3ZxxiHWQ,1344509935/umagicpro-pp%2Fuser%2Freset%2F463%2F1344333893%2F90c767fb58489d0d193f05635371045a not found]]>
+              <![CDATA[ERROR: Element id=b-mail-domik-username11 not found]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element link=https://r.mail.yandex.net/url/yFGeiXrIhqkBih3ZxxiHWQ,1344509935/umagicpro-pp%2Fuser%2Freset%2F463%2F1344333893%2F90c767fb58489d0d193f05635371045a not found
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element id=b-mail-domik-username11 not found
 	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
 	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
 	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
-	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:193)
-	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:112)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:317)
+	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -136,11 +113,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRestorPassTrue -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.exit.tests.Administrator@66e64686]" name="tearDown" is-config="true" duration-ms="390" started-at="2012-08-09T16:38:20Z" finished-at="2012-08-09T16:38:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.exit.tests.Administrator@66e64686]" name="tearDown" is-config="true" duration-ms="0" started-at="2012-08-09T16:38:20Z" finished-at="2012-08-09T16:38:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.exit.tests.Administrator@671381e7]" name="tearDown" is-config="true" duration-ms="130" started-at="2012-08-10T15:57:46Z" finished-at="2012-08-10T15:57:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
