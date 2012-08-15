@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviderReg {
 
-	@DataProvider(name = "create")
+	@DataProvider(name = "create", parallel = true)
 	  public static Object[][] createData() {
 		  return new Object[][] { { new String ("Lero1"), ("Lero2"), ("Lero3")}, // первый массив данных
 				 { new String ("123"), ("456"), ("789")}, // второй массив данных
@@ -13,7 +13,7 @@ public class DataProviderReg {
 
 	  	};
 	  	
-		@DataProvider(name = "step1")
+		@DataProvider(name = "step1", parallel = true)
 		  public static Object[][] createDataStep1() {
 			  return new Object[][] { 
 				
@@ -70,7 +70,7 @@ public class DataProviderReg {
 	 }; 
 		
 	 
-	 @DataProvider(name = "step1find")
+	 @DataProvider(name = "step1find", parallel = true)
 	  public static Object[][] createDataStep1Find() {
 		  return new Object[][] { 
 			
@@ -83,7 +83,7 @@ public class DataProviderReg {
 	 
 	 
 	 
-	 @DataProvider(name = "step2")
+	 @DataProvider(name = "step2", parallel = true)
 	  public static Object[][] createDataStep2() {
 		  return new Object[][] { 
 			
@@ -94,7 +94,7 @@ public class DataProviderReg {
 	 }; 
 	 
 	 
-	/*	@DataProvider(name = "GroupProvider")
+	/*	@DataProvider(name = "GroupProvider", parallel = true)
 		  public static Object[][] createGroup1() {
 			  return new Object[][] { 
 					  

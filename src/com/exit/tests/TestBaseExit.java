@@ -44,8 +44,6 @@ public class TestBaseExit {
     }
 
 	
-
-	
 	protected void clickOn(Finder<WebElement, WebDriver> finder) {
 		context.clickOn(finder);
 	}
@@ -60,16 +58,6 @@ public class TestBaseExit {
 	
 	public static org.openqa.selenium.lift.find.XPathFinder xpath(String xpath) {
 		return new org.openqa.selenium.lift.find.XPathFinder(xpath);
-	}
-	 
-	protected String tagDescription() {
-		// TODO Auto-generated method stub
-		return "link";
-	}
-
-	protected String tagName() {
-		// TODO Auto-generated method stub
-		return "a";
 	}
 	
 }

@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 
 public class StaticProviderEx {
 
-	@DataProvider(name = "create")
+	@DataProvider(name = "create", parallel = true)
 	  public static Object[][] createData() {
 		  return new Object[][] { { new String ("Lero1"), ("Lero2"), ("Lero3")}, // первый массив данных
 				 { new String ("123"), ("456"), ("789")}, // второй массив данных

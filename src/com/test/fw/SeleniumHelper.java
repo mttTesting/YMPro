@@ -57,8 +57,8 @@ public class SeleniumHelper {
 	
 	private static void createNewLoggingSelenium(String key, String serverHost, int serverPool, String browserStartCommand, String browserURL) throws Exception {		
 		final String resultEncoding = "UTF-8";
-		java.util.Date date = new java.util.Date(System.currentTimeMillis()); //получаем текущую дату для имени файла
-        BufferedWriter writer = LoggingUtils.createWriter("./log/result."+key+(counter++)+date+".html", resultEncoding, true);
+		//java.util.Date date = new java.util.Date(System.currentTimeMillis()); //получаем текущую дату для имени файла
+        BufferedWriter writer = LoggingUtils.createWriter("./log/result."+key+(counter++)+".html", resultEncoding, true);
 	    LoggingResultsFormatter htmlFormatter = 
 		        new HtmlResultFormatter(writer, resultEncoding);
 	    htmlFormatter.setScreenShotBaseUri(""); // this is for linking to the screenshots

@@ -1,15 +1,15 @@
 package com.exit.tests;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.Test; 
 import org.testng.AssertJUnit;
+
 
 public class Administrator extends TestBaseExit {
 	
 	//Ошибка "Вход в личный кабинет администратора"
-	@Test (dataProvider = "warning1", dataProviderClass = DataProviderExit.class)
+	@Test (dataProvider = "warning1", dataProviderClass = DataProviderExit.class, priority = 0)
 	public void testwarning1 (String login, String pass) throws Exception {
-	selenium.logComment("Administrator with login = "+login+" password= "+pass);
-			
+		selenium.logComment("Administrator with login = "+login+" password= "+pass);
 		selenium.open("http://umagicpro-pp/");
 		selenium.click("id=bHEnterText");
 		selenium.waitForPageToLoad("30000");
@@ -18,16 +18,15 @@ public class Administrator extends TestBaseExit {
 		selenium.type("pass", pass);
 		selenium.click("op");
 		selenium.waitForPageToLoad("30000");
-		AssertJUnit.assertTrue("Поле обязательно для заполнения.", true);
+		AssertJUnit.assertTrue("Поле обязательно для заполнения.", true);		
 		//AssertJUnit.assertEquals(selenium.getText("css=div.messages.error"), "Поле обязательно для заполнения.");
 		//AssertJUnit.assertFalse(selenium.isElementPresent("id=error"));
 	}
 		
 	//Ошибка "Логин или пароль введены неверно (восстановление пароля)."
-	@Test (dataProvider = "warning2", dataProviderClass = DataProviderExit.class)
+	@Test (dataProvider = "warning2", dataProviderClass = DataProviderExit.class, priority = 1)
 	public void testwarning2 (String login, String pass) throws Exception {
-	selenium.logComment("Administrator with login = "+login+" password= "+pass);
-				
+		selenium.logComment("Administrator with login = "+login+" password= "+pass);		
 		selenium.open("http://umagicpro-pp/");
 		selenium.click("id=bHEnterText");
 		selenium.waitForPageToLoad("30000");
@@ -41,7 +40,7 @@ public class Administrator extends TestBaseExit {
 	}
 	
 	//Восстановление пароля False
-	@Test (dataProvider = "restorPassFalse", dataProviderClass = DataProviderExit.class)
+	@Test (dataProvider = "restorPassFalse", dataProviderClass = DataProviderExit.class, priority = 2)
 	public void testRestorPassFalse (String mail) throws Exception {
 	selenium.logComment("Restorу pass with e-mail= "+mail);
 				
@@ -66,7 +65,7 @@ public class Administrator extends TestBaseExit {
 	}
 	
 	//Восстановление пароля True
-		@Test (dataProvider = "restorPassTrue", dataProviderClass = DataProviderExit.class)
+		@Test (dataProvider = "restorPassTrue", dataProviderClass = DataProviderExit.class, priority = 3)
 		public void testRestorPassTrue (String mail) throws Exception {
 		selenium.logComment("Restorу pass with e-mail= "+mail);
 					
@@ -100,14 +99,67 @@ public class Administrator extends TestBaseExit {
 			
 		AssertJUnit.assertEquals(selenium.getText("css=span.b-messages__subject"), "Восстановление пароля");
 		AssertJUnit.assertFalse(selenium.isElementPresent("id=error"));	
+		
 		//Открыть письмо
 		selenium.click("css=span.b-messages__subject");
 		AssertJUnit.assertTrue("From: no-reply@YM.pro [mailto:no-reply@YM.pro]", true);
 		AssertJUnit.assertTrue("Subject: Восстановление пароля", true);
 		AssertJUnit.assertTrue("Вы можете войти в личный кабинет, используя ссылку, указанную ниже", true);
 		AssertJUnit.assertTrue("link=exact:http://umagicpro-pp/user/reset/*", true);
-		clickOn(xpath("link=exact:http://umagicpro-pp/user/reset/*"));
+		
+		//Перейти по ссылке активации
+		
+		for(int second = 0;; second++) {
+			if (second >= 60) AssertJUnit.fail("timeout перехода по ссылки из письма");
+            try { if (selenium.isElementPresent("//a[contains(text(),'http://umagicpro-pp/user/reset/')]"))
+            		{selenium.click("//a[contains(text(),'http://umagicpro-pp/user/reset/')]"); break;}
+            	}catch(Exception e) {}
+            Thread.sleep(1000);
+			}
+		
+		//selenium.waitForPopUp(selenium.getAllWindowNames()[1], "10000");
+		//selenium.selectWindow("css=div.bLayout__eBody");
+		//selenium.selectWindow("//a[contains(text(),'http://umagicpro-pp/user/reset/')]");
+		
+		for(int second = 0;; second++) {
+			if (second >= 60) AssertJUnit.fail("timeout перехода по ссылки из письма");
+            try { if (selenium.isTextPresent("Нажмите на эту кнопку для входа на сайт и изменения своего пароля.\r\n\r\nВход в аккаунт с использованием этой ссылки может быть выполнен только один раз."));
+            		{selenium.click("id=edit-submit"); break;}
+            	}catch(Exception e) {}
+            Thread.sleep(1000);
+			}
+		
+		//Ожидаем форму для входа в ЛКА после восстановления пароля
+		//selenium.focus("css=div.bLayout__eBody");
+		
+		/*for (int second = 0;; second++) {
+			if (second >= 60) AssertJUnit.fail("timeout ожидания страницы восстановления пароля");
+			try { if (selenium.isElementPresent("css=div.bLoginFormWrap.mC2")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}*/
+		
+		//AssertJUnit.assertTrue(selenium.isTextPresent("Нажмите на эту кнопку для входа на сайт и изменения своего пароля.\r\n\r\nВход в аккаунт с использованием этой ссылки может быть выполнен только один раз."));
+		
+		//Вход в ЛКА для изменения пароля
+		selenium.click("id=edit-submit");
+		selenium.waitForPageToLoad("30000");
+		AssertJUnit.assertEquals(selenium.getTitle(), "Лицевой счет | YM.pro");
+		 
+		//Закрыть инструкцию
+		for(int second = 0;; second++) {
+			if (second >= 60) AssertJUnit.fail("timeout вход в ЛКА (восстановление пароля)");
+            try { if (selenium.isElementPresent("id=slidetitle"))
+            		{selenium.click("css=span.phone_confirm_text.conf_text"); break;}
+            	}catch(Exception e) {}
+            Thread.sleep(1000);
+			}
+		
+		AssertJUnit.assertTrue(selenium.isTextPresent("Сменить пароль"));
+		
+		selenium.focus("//a[contains(text(),'http://mail.yandex.ru/')]");
+		selenium.click("link=Выход");
+		selenium.waitForPageToLoad("30000");
+		AssertJUnit.assertEquals(selenium.getTitle(), "Яндекс");
 		}
-
 }
 
