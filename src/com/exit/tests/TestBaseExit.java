@@ -1,14 +1,11 @@
 package com.exit.tests;
 
-import org.openqa.selenium.WebDriver; 
+import org.openqa.selenium.WebDriver;  
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.lift.TestContext;
 import org.openqa.selenium.lift.WebDriverTestContext;
 import org.openqa.selenium.lift.find.Finder;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 import com.test.fw.SeleniumHelper;
 import com.unitedinternet.portal.selenium.utils.logging.LoggingDefaultSelenium;
 

@@ -1,7 +1,7 @@
 	package com.test.fw;
 	
 	
-	import static org.openqa.selenium.lift.match.NumericalMatchers.exactly;
+	import static org.openqa.selenium.lift.match.NumericalMatchers.exactly; 
 	import static org.openqa.selenium.lift.match.SelectionMatcher.selection;
 	
 	import org.hamcrest.Matcher;
