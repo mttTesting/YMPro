@@ -1,8 +1,7 @@
 package com.example.tests;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.Test; 
 import org.testng.AssertJUnit;
-
 import com.example.tests.StaticProviderEx;
 
 public class Step1Ex extends TestBaseEx {
