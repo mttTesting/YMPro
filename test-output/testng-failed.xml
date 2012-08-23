@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)" preserve-order="true">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.exit.tests.Administrator">
         <methods>
           <include name="setUp"/>
-          <include name="testRestorPassTrue" invocation-numbers="0 1"/>
+          <include name="testRestorPassTrue" invocation-numbers="1 0"/>
+          <include name="testRestorPassFalse" invocation-numbers="1 0"/>
+          <include name="testwarning2" invocation-numbers="0 1"/>
+          <include name="testwarning1" invocation-numbers="0 2 1"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.exit.tests.Administrator -->

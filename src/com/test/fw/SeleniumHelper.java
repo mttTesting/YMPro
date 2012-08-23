@@ -1,6 +1,7 @@
 package com.test.fw;
 
 import java.io.BufferedWriter; 
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -52,8 +53,9 @@ public class SeleniumHelper {
 	
 	private static void createNewLoggingSelenium(String key, String serverHost, int serverPool, String browserStartCommand, String browserURL) throws Exception {		
 		final String resultEncoding = "UTF-8";
-		//java.util.Date date = new java.util.Date(System.currentTimeMillis()); //получаем текущую дату для имени файла
-        BufferedWriter writer = LoggingUtils.createWriter("./log/result."+key+(counter++)+".html", resultEncoding, true);
+		long curTime = System.currentTimeMillis(); 
+		String curStringDate = new SimpleDateFormat("dd.MM.yyyy_HH-mm-ss").format(curTime); 
+		BufferedWriter writer = LoggingUtils.createWriter("./log/result."+key+" "+curStringDate+" №"+(counter++)+".html", resultEncoding, true);
 	    LoggingResultsFormatter htmlFormatter = 
 		        new HtmlResultFormatter(writer, resultEncoding);
 	    htmlFormatter.setScreenShotBaseUri(""); // this is for linking to the screenshots

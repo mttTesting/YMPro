@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="2" passed="0">
+<testng-results skipped="0" failed="9" total="9" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="125808" started-at="2012-08-13T14:16:33Z" finished-at="2012-08-13T14:18:39Z">
+  <suite name="Default suite" duration-ms="834532" started-at="2012-08-23T06:13:41Z" finished-at="2012-08-23T06:27:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="125808" started-at="2012-08-13T14:16:33Z" finished-at="2012-08-13T14:18:39Z">
+    <test name="Default test" duration-ms="834532" started-at="2012-08-23T06:13:41Z" finished-at="2012-08-23T06:27:36Z">
       <class name="com.exit.tests.Administrator">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@1844b009]" name="setUp" is-config="true" duration-ms="19795" started-at="2012-08-13T18:16:33Z" finished-at="2012-08-13T18:16:53Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="setUp" is-config="true" duration-ms="34965" started-at="2012-08-23T10:13:41Z" finished-at="2012-08-23T10:14:16Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,7 +16,380 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testRestorPassTrue(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@1844b009]" name="testRestorPassTrue" duration-ms="92716" started-at="2012-08-13T18:16:53Z" data-provider="restorPassTrue" finished-at="2012-08-13T18:18:26Z">
+        <test-method status="FAIL" signature="testwarning1(java.lang.String, java.lang.String)[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="testwarning1" duration-ms="796190" started-at="2012-08-23T10:14:16Z" data-provider="warning1" finished-at="2012-08-23T10:27:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100102]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.thoughtworks.selenium.SeleniumException">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: Connection refused: connect
+	at com.thoughtworks.selenium.HttpCommandProcessor.executeCommandOnServlet(HttpCommandProcessor.java:121)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:101)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doAutomaticScreenshot(LoggingCommandProcessor.java:494)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doExceptionLogging(LoggingCommandProcessor.java:386)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:143)
+	at com.thoughtworks.selenium.DefaultSelenium.open(DefaultSelenium.java:369)
+	at com.exit.tests.Administrator.testwarning1(Administrator.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getOutputStreamWriter(HttpCommandProcessor.java:149)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getCommandResponseAsString(HttpCommandProcessor.java:176)
+	at com.thoughtworks.selenium.HttpCommandProcessor.executeCommandOnServlet(HttpCommandProcessor.java:118)
+	... 24 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testwarning1 -->
+        <test-method status="FAIL" signature="testwarning1(java.lang.String, java.lang.String)[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="testwarning1" duration-ms="2153" started-at="2012-08-23T10:14:16Z" data-provider="warning1" finished-at="2012-08-23T10:14:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.thoughtworks.selenium.SeleniumException">
+            <message>
+              <![CDATA[ERROR Server Exception: unexpected command json={command:"open",target:"http://umagicpro-pp/",value:""} in place before new command open could be added]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR Server Exception: unexpected command json={command:"open",target:"http://umagicpro-pp/",value:""} in place before new command open could be added
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
+	at com.thoughtworks.selenium.DefaultSelenium.open(DefaultSelenium.java:369)
+	at com.exit.tests.Administrator.testwarning1(Administrator.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testwarning1 -->
+        <test-method status="FAIL" signature="testwarning1(java.lang.String, java.lang.String)[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="testwarning1" duration-ms="796151" started-at="2012-08-23T10:14:16Z" data-provider="warning1" finished-at="2012-08-23T10:27:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.thoughtworks.selenium.SeleniumException">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: Connection refused: connect
+	at com.thoughtworks.selenium.HttpCommandProcessor.executeCommandOnServlet(HttpCommandProcessor.java:121)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:101)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doAutomaticScreenshot(LoggingCommandProcessor.java:494)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doExceptionLogging(LoggingCommandProcessor.java:386)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:143)
+	at com.thoughtworks.selenium.DefaultSelenium.open(DefaultSelenium.java:369)
+	at com.exit.tests.Administrator.testwarning1(Administrator.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getOutputStreamWriter(HttpCommandProcessor.java:149)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getCommandResponseAsString(HttpCommandProcessor.java:176)
+	at com.thoughtworks.selenium.HttpCommandProcessor.executeCommandOnServlet(HttpCommandProcessor.java:118)
+	... 24 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testwarning1 -->
+        <test-method status="FAIL" signature="testwarning2(java.lang.String, java.lang.String)[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="testwarning2" duration-ms="925" started-at="2012-08-23T10:27:33Z" data-provider="warning2" finished-at="2012-08-23T10:27:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.thoughtworks.selenium.SeleniumException">
+            <message>
+              <![CDATA[ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
+	at com.thoughtworks.selenium.DefaultSelenium.open(DefaultSelenium.java:369)
+	at com.exit.tests.Administrator.testwarning2(Administrator.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testwarning2 -->
+        <test-method status="FAIL" signature="testwarning2(java.lang.String, java.lang.String)[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="testwarning2" duration-ms="938" started-at="2012-08-23T10:27:33Z" data-provider="warning2" finished-at="2012-08-23T10:27:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100102]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4321]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.thoughtworks.selenium.SeleniumException">
+            <message>
+              <![CDATA[ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
+	at com.thoughtworks.selenium.DefaultSelenium.open(DefaultSelenium.java:369)
+	at com.exit.tests.Administrator.testwarning2(Administrator.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testwarning2 -->
+        <test-method status="FAIL" signature="testRestorPassFalse(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="testRestorPassFalse" duration-ms="1148" started-at="2012-08-23T10:27:34Z" data-provider="restorPassFalse" finished-at="2012-08-23T10:27:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.thoughtworks.selenium.SeleniumException">
+            <message>
+              <![CDATA[ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
+	at com.thoughtworks.selenium.DefaultSelenium.open(DefaultSelenium.java:369)
+	at com.exit.tests.Administrator.testRestorPassFalse(Administrator.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRestorPassFalse -->
+        <test-method status="FAIL" signature="testRestorPassFalse(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="testRestorPassFalse" duration-ms="1131" started-at="2012-08-23T10:27:34Z" data-provider="restorPassFalse" finished-at="2012-08-23T10:27:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qqq@qq.qu]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.thoughtworks.selenium.SeleniumException">
+            <message>
+              <![CDATA[ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
+	at com.thoughtworks.selenium.DefaultSelenium.open(DefaultSelenium.java:369)
+	at com.exit.tests.Administrator.testRestorPassFalse(Administrator.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRestorPassFalse -->
+        <test-method status="FAIL" signature="testRestorPassTrue(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="testRestorPassTrue" duration-ms="820" started-at="2012-08-23T10:27:35Z" data-provider="restorPassTrue" finished-at="2012-08-23T10:27:35Z">
           <params>
             <param index="0">
               <value>
@@ -24,45 +397,41 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="com.thoughtworks.selenium.SeleniumException">
             <message>
-              <![CDATA[timeout перехода по ссылки из письма]]>
+              <![CDATA[ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: timeout перехода по ссылки из письма
-	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
-	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:127)
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
+	at com.thoughtworks.selenium.DefaultSelenium.open(DefaultSelenium.java:369)
+	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
-	at org.testng.TestNG.run(TestNG.java:1030)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRestorPassTrue -->
-        <test-method status="FAIL" signature="testRestorPassTrue(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@1844b009]" name="testRestorPassTrue" duration-ms="5816" started-at="2012-08-13T18:18:26Z" data-provider="restorPassTrue" finished-at="2012-08-13T18:18:31Z">
+        <test-method status="FAIL" signature="testRestorPassTrue(java.lang.String)[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="testRestorPassTrue" duration-ms="699" started-at="2012-08-23T10:27:35Z" data-provider="restorPassTrue" finished-at="2012-08-23T10:27:35Z">
           <params>
             <param index="0">
               <value>
@@ -72,33 +441,69 @@
           </params>
           <exception class="com.thoughtworks.selenium.SeleniumException">
             <message>
-              <![CDATA[ERROR: Element id=b-mail-domik-username11 not found]]>
+              <![CDATA[ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element id=b-mail-domik-username11 not found
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?
 	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
 	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
 	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
-	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:317)
-	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.open(DefaultSelenium.java:369)
+	at com.exit.tests.Administrator.testRestorPassTrue(Administrator.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRestorPassTrue -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.exit.tests.Administrator@77dbc064]" name="tearDown" is-config="true" duration-ms="0" started-at="2012-08-23T10:27:35Z" finished-at="2012-08-23T10:27:35Z">
+          <exception class="com.thoughtworks.selenium.SeleniumException">
+            <message>
+              <![CDATA[ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR Server Exception: sessionId eeb8a5d7b70e4d5a839b9b37a639fa9d doesn't exist; perhaps this session was already stopped?
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
+	at com.thoughtworks.selenium.DefaultSelenium.close(DefaultSelenium.java:427)
+	at com.test.fw.SeleniumHelper.dismissSelenium(SeleniumHelper.java:79)
+	at com.exit.tests.TestBaseExit.tearDown(TestBaseExit.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
 	at org.testng.TestNG.run(TestNG.java:1030)
@@ -108,10 +513,6 @@
 ]]>
             </full-stacktrace>
           </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRestorPassTrue -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.exit.tests.Administrator@1844b009]" name="tearDown" is-config="true" duration-ms="7465" started-at="2012-08-13T18:18:31Z" finished-at="2012-08-13T18:18:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
