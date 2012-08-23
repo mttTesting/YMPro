@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.exit.tests.Administrator">
+      <class name="com.example.tests.Step1Ex">
         <methods>
           <include name="setUp"/>
-          <include name="testRestorPassTrue" invocation-numbers="1 0"/>
-          <include name="testRestorPassFalse" invocation-numbers="1 0"/>
-          <include name="testwarning2" invocation-numbers="0 1"/>
-          <include name="testwarning1" invocation-numbers="0 2 1"/>
+          <include name="testStep1" invocation-numbers="1 2 3 4"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.exit.tests.Administrator -->
+      </class> <!-- com.example.tests.Step1Ex -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

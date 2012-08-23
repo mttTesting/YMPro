@@ -1,6 +1,6 @@
 package com.test.fw;
 
-import java.io.BufferedWriter; 
+import java.io.BufferedWriter;  
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;

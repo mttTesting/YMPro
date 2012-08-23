@@ -1,8 +1,6 @@
 package com.registration.tests;
 
-import org.testng.annotations.AfterClass; 
 import org.testng.annotations.*;
-
 import com.test.fw.SeleniumHelper;
 import com.unitedinternet.portal.selenium.utils.logging.LoggingDefaultSelenium;
  

@@ -1,6 +1,6 @@
 package com.registration.tests;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.Test; 
 import org.testng.AssertJUnit;
 
 public class Step1 extends TestBaseReg {

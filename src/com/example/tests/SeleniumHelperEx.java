@@ -1,21 +1,12 @@
 package com.example.tests;
-
-import java.io.BufferedWriter;
-import java.text.DateFormat;
+ 
+import java.io.BufferedWriter;  
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import com.thoughtworks.selenium.HttpCommandProcessor;
 import com.thoughtworks.selenium.Selenium;
-import com.unitedinternet.portal.selenium.utils.logging.HtmlResultFormatter;
-import com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor;
-import com.unitedinternet.portal.selenium.utils.logging.LoggingDefaultSelenium;
-import com.unitedinternet.portal.selenium.utils.logging.LoggingResultsFormatter;
-import com.unitedinternet.portal.selenium.utils.logging.LoggingUtils;
+import com.unitedinternet.portal.selenium.utils.logging.*;
 
 public class SeleniumHelperEx {
 	

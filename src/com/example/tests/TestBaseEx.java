@@ -1,10 +1,7 @@
 package com.example.tests;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-
+import org.testng.annotations.*;
+import com.example.tests.SeleniumHelperEx;
 import com.unitedinternet.portal.selenium.utils.logging.LoggingDefaultSelenium;
  
 
