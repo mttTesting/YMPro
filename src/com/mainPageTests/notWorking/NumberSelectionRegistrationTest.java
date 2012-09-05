@@ -1,4 +1,4 @@
-package com.mainPageTests.working;
+package com.mainPageTests.notWorking;
 
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
