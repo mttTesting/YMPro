@@ -1,28 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Selenium2.0"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="var" path="TESTNG_HOME"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ClientDriver"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/LoggingSelenium"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Selenium"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/testngHelper"/>
-	<classpathentry kind="lib" path="C:/Workspace/selenium/selenium-java-2.25.0.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-all-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-all-1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-all-1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-core-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-core-1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-core-1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-generator-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-generator-1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-generator-1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-integration-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-integration-1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-integration-1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-library-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-library-1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-library-1.3-sources.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry exported="true" kind="var" path="TESTNG_HOME"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/ClientDriver"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/Selenium"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/testngHelper"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/selenium-java-2.25.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-all-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-all-1.3-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-all-1.3-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-core-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-core-1.3-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-core-1.3-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-generator-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-generator-1.3-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-generator-1.3-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-integration-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-integration-1.3-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-integration-1.3-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-library-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-library-1.3-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/hamcrest-1.3/hamcrest-library-1.3-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/apache-mime4j-0.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/bsh-1.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/cglib-nodep-2.1_3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/commons-codec-1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/commons-collections-3.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/commons-exec-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/commons-io-2.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/commons-jxpath-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/commons-lang-2.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/cssparser-0.9.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/guava-12.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/hamcrest-core-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/hamcrest-library-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/htmlunit-2.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/htmlunit-core-js-2.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/httpclient-4.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/httpcore-4.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/httpmime-4.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/ini4j-0.5.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/jcommander-1.13.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/jna-3.4.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/jna-platform-3.4.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/json-20080701.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/junit-dep-4.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/nekohtml-1.9.15.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/netty-3.2.7.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/operadriver-0.14.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/protobuf-java-2.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/sac-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/serializer-2.7.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/testng-6.0.1-nobsh-noguice.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/webbit-0.4.8-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/xalan-2.7.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/xercesImpl-2.9.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Workspace/selenium/libs/xml-apis-1.3.04.jar"/>
+	<classpathentry kind="lib" path="C:/Workspace/logging-selenium-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Workspace/selenium-server.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

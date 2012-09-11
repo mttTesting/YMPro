@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.example.tests.Step1Ex">
+      <class name="com.notWorking.RegistrationMoscowAccountTest">
         <methods>
-          <include name="setUp"/>
-          <include name="testStep1" invocation-numbers="1 2 3 4"/>
           <include name="tearDown"/>
+          <include name="registrationMoscowAccountTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.example.tests.Step1Ex -->
+      </class> <!-- com.notWorking.RegistrationMoscowAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

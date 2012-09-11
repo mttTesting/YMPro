@@ -12,7 +12,7 @@ public class TestBaseReg {
 	@Parameters({"browser"})
 	@BeforeClass
 	public void setUp(@Optional String browser) throws Exception {
-		if (browser == null) browser = "*googlechrome";
+		if (browser == null) browser = "*firefox";
 		selenium = (LoggingDefaultSelenium) SeleniumHelper.getSelenium(this.getClass().getSimpleName(),
 				"localhost", 4444, browser, "http://umagicpro-pp/");
 				
