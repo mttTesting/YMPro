@@ -3,7 +3,7 @@ package com.registration.tests;
 import org.testng.annotations.Test; 
 import org.testng.AssertJUnit;
 
-public class Step1 extends TestBaseReg {
+public class Step1 extends TestBaseReg { 
 
 	@Test (dataProvider = "step1", dataProviderClass = DataProviderReg.class)
 	public void testStep1(String town, String tname, String pref, String num) throws Exception {

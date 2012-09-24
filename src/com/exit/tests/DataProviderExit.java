@@ -16,7 +16,7 @@ public class DataProviderExit {
 		@DataProvider(name = "warning2", parallel = true)
 		  public static Object[][] createDataLoging2() {
 			  return new Object[][] { { new String ("100"), ("1234")}, // первый массив данных
-					 { new String ("100102"), ("4321")}, // второй массив данных
+					 { new String ("100102"), ("4321")},  // второй массив данных
 			  };	  
 
 		  	};

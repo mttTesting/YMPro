@@ -9,7 +9,7 @@ public class Administrator extends TestBaseExit {
 	//Ошибка "Вход в личный кабинет администратора"
 	@Test (dataProvider = "warning1", dataProviderClass = DataProviderExit.class, priority = 0)
 	public void testwarning1 (String login, String pass) throws Exception {
-		selenium.logComment("Administrator with login = "+login+" password= "+pass);
+		selenium.logComment("Administrator with login = "+login +" password= "+ pass);
 		selenium.open("http://umagicpro-pp/");
 		selenium.click("id=bHEnterText");
 		selenium.waitForPageToLoad("30000");

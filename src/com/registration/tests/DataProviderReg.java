@@ -23,7 +23,7 @@ public class DataProviderReg {
 				  			   ("+7 (812)"),
 							   ("xpath=(//span[@name='abc-numbers'])[2]"),}, 
 						 
-				//Екатеринбург		               
+				//Екатеринбург 		               
 		 		  { new String ("//div[@id='edit-city-wrapper']/span/ul/li[3]"), 
 						  	   ("Екатеринбург"),
 						  	   ("+7 (343)"),
