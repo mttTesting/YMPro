@@ -10,6 +10,24 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.notWorking.RegistrationMoscowAccountTest -->
+      <class name="com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest">
+        <methods>
+          <include name="registrationMobilePhoneConfirmationButtonTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest -->
+      <class name="com.mainPageTests.RegistrationWrongVerificationCodeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mainPageTests.RegistrationWrongVerificationCodeTest -->
+      <class name="com.mainPageTests.RegistrationLicenseAgreementFlagOffTest">
+        <methods>
+          <include name="registrationMobilePhoneConfirmationButtonTest"/>
+        </methods>
+      </class> <!-- com.mainPageTests.RegistrationLicenseAgreementFlagOffTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -11,7 +11,7 @@ public class AddAndDeleteBlacklistTest extends TestBaseReg{
 		selenium.open("http://umagicpro-pp");
 		selenium.click("css=#administrator > span"); //click 'enter as administrator'
 		selenium.waitForPageToLoad("30000");
-		selenium.type("id=edit-name-1", "100126"); //enter login
+		selenium.type("id=edit-name-1", "100138"); //enter login
 		selenium.type("id=edit-pass-1", "1234"); //enter password
 		selenium.click("id=edit-submit-1"); //click 'submit'
 		selenium.waitForPageToLoad("30000");

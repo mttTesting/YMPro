@@ -1,0 +1,97 @@
+<html>
+<head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><meta content="cache-control" http-equiv="no-cache"><meta content="pragma" http-equiv="no-cache"><style type="text/css">
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.status_maybefailed {
+    background-color: #ffffcc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style>
+<title>Test results</title></head>
+<body>
+ <span style="font-size:9px;font-family:arial,verdana,sans-serif;">HTML Logging of Junit driven Selenium-RC Tests. Contributed by Robert Zimmermann (unitedinternet.com)</span><h1>Test results </h1>
+<table>
+<tr><td>user-agent:</td><td>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/20100101 Firefox/15.0.1</td></tr>
+<tr><td>selenium-rc:</td><td> vUNKNOWN [UNKNOWN]</td></tr>
+<tr><td>selenium-core:</td><td> vUNKNOWN [UNKNOWN]</td></tr>
+<tr><td>LoggingSelenium:</td><td> revision [96]</td></tr>
+<tr><td>test-started:</td><td>16:07:18 24-09-2012</td></tr>
+<tr><td>test-finished:</td><td>16:08:18 24-09-2012</td></tr>
+<tr><td>test-duration [ms]:</td><td>59 573</td></tr>
+<tr><td>commands processed:</td><td>23</td></tr>
+<tr><td>verifications processed:</td><td>0</td></tr>
+<tr class="status_failed"><td>failed commands:</td><td>1</td></tr>
+<tr class="status_failed"><td>last failed message:</td><td>ERROR: Element css=span.ui-icon.ui-icon-closethick not found</td></tr>
+
+<tr><td>commands not logged:</td><td>{getHtmlSource}</td></tr>
+</table>
+<table border="1"><tbody><tr><td><b>Selenium-Command</b></td><td><b>Parameter-1</b></td><td><b>Parameter-2</b></td><td><b>Res.RC</b></td><td><b>Res.Selenium</b></td><td><b>Time [ms]</b></td><td><b>Calling-Class with Linenumber</b></td></tr>
+<tr class="title"><td colspan="7">executing createNewLoggingSelenium()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_done" title="" alt=""><td>windowFocus</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">19</td><td>com.test.fw.SeleniumHelper#69</td></tr>
+<tr class="status_done" title="" alt=""><td>windowMaximize</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">34</td><td>com.test.fw.SeleniumHelper#70</td></tr>
+<tr class="title"><td colspan="7">executing getSelenium()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_passed" title="" alt=""><td>getLocation</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>http://localhost:4444/selenium-server/core/Blank.html?start=true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">24</td><td>com.test.fw.SeleniumHelper#30</td></tr>
+<tr class="title"><td colspan="7">executing phoneAddGroupAndCancelTest()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_done" title="" alt=""><td>open</td><td>http://umagicpro-pp</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">2436</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#10</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>css=span</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">27</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#11</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">1312</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#12</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-name-1</td><td>0776004151</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">34</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#13</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-pass-1</td><td>1234</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">16</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#14</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>id=edit-submit-1</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">65</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#15</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">27057</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#16</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>css=a.bPopup__eClose.instructions-close</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">47</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#17</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//div[@id='block-umagicpro_contacts-0']/div/div/table/tbody/tr/td[2]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">6639</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#18</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-contact-first-name</td><td>t1</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">37</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#20</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-contact-telephone1</td><td>001</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">24</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#21</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-contact-telephone2</td><td>002</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">16</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#22</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-contact-telephone3</td><td>003</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">6</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#23</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-contact-telephone4</td><td>004</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">5</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#24</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-contact-telephone5</td><td>005</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">4</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#25</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>id=edit-save</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">15</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#26</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//div[@onclick='callByContacts("005"); return false;']</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">85</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#28</td></tr>
+<tr class="status_done"><td colspan="5" valign="center" align="center" halign="center"><a href="automaticErrorScreenshot2012-09-24_16-08.png"><img src="automaticErrorScreenshot2012-09-24_16-08.png" width="200" height="200" alt="Selenium Screenshot" title="Selenium Screenshot"/><br/>automaticErrorScreenshot2012-09-24_16-08.png</a></td><td>325</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#30</td></tr>
+<tr class="status_failed" title="" alt=""><td>click</td><td>css=span.ui-icon.ui-icon-closethick</td><td>&nbsp;</td><td>ERROR</td><td> com.thoughtworks.selenium.SeleniumException - ERROR: Element css=span.ui-icon.ui-icon-closethick not found</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">332</td><td>com.LKS_Tests.PhoneAddFiveNumbersForContactTest#30</td></tr>
+<tr class="title"><td colspan="7">executing dismissSelenium()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_done" title="" alt=""><td>close</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">1248</td><td>com.test.fw.SeleniumHelper#79</td></tr>
+</tbody></table></body></html>

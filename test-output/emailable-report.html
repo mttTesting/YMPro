@@ -29,20 +29,27 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">69,8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi_attn">1</td><td class="numi_attn">2</td><td class="numi">3 704,7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">com.notWorking.RegistrationMoscowAccountTest<td><a href="#m1"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1347365107212</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest<td><a href="#m1"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1348495537350</td><td class="numi">0</td></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.notWorking.RegistrationMoscowAccountTest<td><a href="#m2"><b>registrationMoscowAccountTest</b>  </a></td><td class="numi">1</td><td>1347365043202</td><td class="numi">64007</td></tr>
+<tr class="failedodd"><td rowspan="1">com.notWorking.RegistrationMoscowAccountTest<td><a href="#m2"><b>registrationMoscowAccountTest</b>  </a></td><td class="numi">1</td><td>1348493639253</td><td class="numi">65873</td></tr>
+<tr class="failedeven"><td rowspan="1">com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest<td><a href="#m3"><b>registrationMobilePhoneConfirmationButtonTest</b>  </a></td><td class="numi">1</td><td>1348493734982</td><td class="numi">1802367</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="2">com.mainPageTests.RegistrationLicenseAgreementFlagOffTest<td><a href="#m4"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1348497337646</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m5"><b>setUp</b>  </a></td><td class="numi">1</td><td>1348497337644</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.mainPageTests.RegistrationLicenseAgreementFlagOffTest<td><a href="#m6"><b>registrationMobilePhoneConfirmationButtonTest</b>  </a></td><td class="numi">1</td><td>1348497337645</td><td class="numi">1</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.mainPageTests.RegistrationWrongVerificationCodeTest<td><a href="#m7"><b>registrationStabilityOfNumbersTest</b>  </a></td><td class="numi">1</td><td>1348493711858</td><td class="numi">16724</td></tr>
 </table>
 <h1>Default test</h1>
-<a id="m1"></a><h2>com.notWorking.RegistrationMoscowAccountTest:tearDown</h2>
+<a id="m1"></a><h2>com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest:tearDown</h2>
 <div style="padding-left:3em">
-<p>ERROR: Command execution failure. Please search the user group at https://groups.google.com/forum/#!forum/selenium-users for error details from the log window.  The error message is: can&apos;t access dead object</p>
+<p>ERROR: Command timed out</p>
 com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
 <br/>at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
 <br/>at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
@@ -76,7 +83,18 @@ com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrE
 <br/>1 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>com.notWorking.RegistrationMoscowAccountTest:registrationMoscowAccountTest</h2>
+<a id="m2"></a><h2>com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest:registrationMobilePhoneConfirmationButtonTest</h2>
+<div style="padding-left:3em">
+<p>ERROR: Command timed out</p>
+com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+<br/>at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+<br/>at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
+<br/>at com.thoughtworks.selenium.DefaultSelenium.waitForPageToLoad(DefaultSelenium.java:678)
+<br/>at com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest.registrationMobilePhoneConfirmationButtonTest(RegistrationMobilePhoneConfirmationButtonTest.java:13)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.notWorking.RegistrationMoscowAccountTest:registrationMoscowAccountTest</h2>
 <div style="padding-left:3em">
 <p>Timed out after 30000ms</p>
 com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
@@ -86,5 +104,13 @@ com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrE
 <br/>at com.notWorking.RegistrationMoscowAccountTest.registrationMoscowAccountTest(RegistrationMoscowAccountTest.java:38)
 <br/>25 lines not shown
 </div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest:registrationMobilePhoneConfirmationButtonTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.mainPageTests.RegistrationWrongVerificationCodeTest:registrationStabilityOfNumbersTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

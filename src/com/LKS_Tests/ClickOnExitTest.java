@@ -11,7 +11,7 @@ public class ClickOnExitTest  extends TestBaseReg{
 		selenium.open("http://umagicpro-pp");
 		selenium.click("css=span");
 		selenium.waitForPageToLoad("30000");
-		selenium.type("id=edit-name-1", "0505804534");
+		selenium.type("id=edit-name-1", "0776004151");
 		selenium.type("id=edit-pass-1", "1234");
 		selenium.click("id=edit-submit-1");
 		selenium.waitForPageToLoad("30000");

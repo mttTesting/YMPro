@@ -1,0 +1,92 @@
+<html>
+<head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><meta content="cache-control" http-equiv="no-cache"><meta content="pragma" http-equiv="no-cache"><style type="text/css">
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.status_maybefailed {
+    background-color: #ffffcc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style>
+<title>Test results</title></head>
+<body>
+ <span style="font-size:9px;font-family:arial,verdana,sans-serif;">HTML Logging of Junit driven Selenium-RC Tests. Contributed by Robert Zimmermann (unitedinternet.com)</span><h1>Test results </h1>
+<table>
+<tr><td>user-agent:</td><td>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/20100101 Firefox/15.0.1</td></tr>
+<tr><td>selenium-rc:</td><td> vUNKNOWN [UNKNOWN]</td></tr>
+<tr><td>selenium-core:</td><td> vUNKNOWN [UNKNOWN]</td></tr>
+<tr><td>LoggingSelenium:</td><td> revision [96]</td></tr>
+<tr><td>test-started:</td><td>16:48:53 24-09-2012</td></tr>
+<tr><td>test-finished:</td><td>16:49:08 24-09-2012</td></tr>
+<tr><td>test-duration [ms]:</td><td>14 802</td></tr>
+<tr><td>commands processed:</td><td>20</td></tr>
+<tr><td>verifications processed:</td><td>1</td></tr>
+
+<tr><td>commands not logged:</td><td>{getHtmlSource}</td></tr>
+</table>
+<table border="1"><tbody><tr><td><b>Selenium-Command</b></td><td><b>Parameter-1</b></td><td><b>Parameter-2</b></td><td><b>Res.RC</b></td><td><b>Res.Selenium</b></td><td><b>Time [ms]</b></td><td><b>Calling-Class with Linenumber</b></td></tr>
+<tr class="title"><td colspan="7">executing createNewLoggingSelenium()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_done" title="" alt=""><td>windowFocus</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">25</td><td>com.test.fw.SeleniumHelper#69</td></tr>
+<tr class="status_done" title="" alt=""><td>windowMaximize</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">57</td><td>com.test.fw.SeleniumHelper#70</td></tr>
+<tr class="title"><td colspan="7">executing getSelenium()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_passed" title="" alt=""><td>getLocation</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>http://localhost:4444/selenium-server/core/Blank.html?start=true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">20</td><td>com.test.fw.SeleniumHelper#30</td></tr>
+<tr class="title"><td colspan="7">executing registrationMobilePhoneConfirmationButtonTest()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_done" title="" alt=""><td>open</td><td>http://umagicpro-pp</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">1683</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#11</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>id=bHRegisterText</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">70</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#13</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">10736</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#14</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>css=span[name="abc-numbers"]</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">66</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#15</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>id=edit-next</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">70</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#16</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">1619</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#17</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-last-name</td><td>12314</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">35</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#18</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-first-name</td><td>1234</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">18</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#19</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-middle-name</td><td>1234</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">15</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#20</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-mail</td><td>111@com.com</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">10</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#21</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>id=edit-personal-phone</td><td>1234</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">9</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#22</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>id=confirm-link</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">87</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#23</td></tr>
+<tr class="status_done" title="" alt=""><td>type</td><td>name=smscode</td><td>1234</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">41</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#24</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>css=span.phone_confirm_text.conf_text</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">17</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#25</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>edit-next</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">10</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#26</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Персональная информация</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">14</td><td>com.mainPageTests.RegistrationLicenseAgreementFlagOffTest#27</td></tr>
+<tr class="title"><td colspan="7">executing dismissSelenium()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_done" title="" alt=""><td>close</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">105</td><td>com.test.fw.SeleniumHelper#79</td></tr>
+</tbody></table></body></html>

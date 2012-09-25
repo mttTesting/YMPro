@@ -11,7 +11,7 @@ public void clickOnAvatarTest () throws Exception {
 		selenium.open("http://umagicpro-pp");
 		selenium.click("css=#administrator > span");
 		selenium.waitForPageToLoad("30000");
-		selenium.type("id=edit-name-1", "100126");
+		selenium.type("id=edit-name-1", "100138");
 		selenium.type("id=edit-pass-1", "1234");
 		selenium.click("id=edit-submit-1");
 		selenium.waitForPageToLoad("30000");
