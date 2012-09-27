@@ -1,0 +1,119 @@
+<html>
+<head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><meta content="cache-control" http-equiv="no-cache"><meta content="pragma" http-equiv="no-cache"><style type="text/css">
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.status_maybefailed {
+    background-color: #ffffcc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style>
+<title>Test results</title></head>
+<body>
+ <span style="font-size:9px;font-family:arial,verdana,sans-serif;">HTML Logging of Junit driven Selenium-RC Tests. Contributed by Robert Zimmermann (unitedinternet.com)</span><h1>Test results </h1>
+<table>
+<tr><td>user-agent:</td><td>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/20100101 Firefox/15.0.1</td></tr>
+<tr><td>selenium-rc:</td><td> vUNKNOWN [UNKNOWN]</td></tr>
+<tr><td>selenium-core:</td><td> vUNKNOWN [UNKNOWN]</td></tr>
+<tr><td>LoggingSelenium:</td><td> revision [96]</td></tr>
+<tr><td>test-started:</td><td>14:27:22 27-09-2012</td></tr>
+<tr><td>test-finished:</td><td>14:27:36 27-09-2012</td></tr>
+<tr><td>test-duration [ms]:</td><td>14 716</td></tr>
+<tr><td>commands processed:</td><td>47</td></tr>
+<tr><td>verifications processed:</td><td>14</td></tr>
+
+<tr><td>commands not logged:</td><td>{getHtmlSource}</td></tr>
+</table>
+<table border="1"><tbody><tr><td><b>Selenium-Command</b></td><td><b>Parameter-1</b></td><td><b>Parameter-2</b></td><td><b>Res.RC</b></td><td><b>Res.Selenium</b></td><td><b>Time [ms]</b></td><td><b>Calling-Class with Linenumber</b></td></tr>
+<tr class="title"><td colspan="7">executing createNewLoggingSelenium()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_done" title="" alt=""><td>windowFocus</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">37</td><td>com.test.fw.SeleniumHelper#69</td></tr>
+<tr class="status_done" title="" alt=""><td>windowMaximize</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">80</td><td>com.test.fw.SeleniumHelper#70</td></tr>
+<tr class="title"><td colspan="7">executing getSelenium()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_passed" title="" alt=""><td>getLocation</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>http://localhost:4444/selenium-server/core/Blank.html?start=true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">28</td><td>com.test.fw.SeleniumHelper#30</td></tr>
+<tr class="title"><td colspan="7">executing checkForAvailabilityAdvantagesPageTest()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_done" title="" alt=""><td>open</td><td>http://umagicpro-pp.lan</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">1060</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#12</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">8</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#13</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">895</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#14</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Полноценная АТС без расходов на «железо»</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">34</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#15</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[3]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">15</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#16</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">909</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#17</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Немедленное использование</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">37</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#18</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[5]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">10</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#19</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">873</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#20</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Персональный личный кабинет сотрудника</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">37</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#21</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[7]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">12</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#22</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">789</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#23</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Качественное постпродажное обслуживание</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">34</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#24</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[9]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">12</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#25</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">857</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#26</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>5 бесплатных внутренних номеров</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">28</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#27</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[11]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">11</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#28</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">776</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#29</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Удобный кабинет администратора</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">35</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#30</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[13]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">25</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#31</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">921</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#32</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Квалифицированная поддержка</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">37</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#33</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[2]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">15</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#34</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">1277</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#35</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Бесплатные звонки внутри сети</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">36</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#36</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[4]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">12</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#37</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">977</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#38</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Высокое качество связи</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">30</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#39</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[6]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">11</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#40</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">846</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#41</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Мобильность в любое время и в любом месте</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">35</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#42</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[8]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">12</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#43</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">953</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#44</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Быстрая онлайн регистрация</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">35</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#45</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[10]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">38</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#46</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">832</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#47</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Уникально низкие цены</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">29</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#48</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[12]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">11</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#49</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">797</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#50</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Доступность на всех устройствах</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">37</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#51</td></tr>
+<tr class="status_done" title="" alt=""><td>click</td><td>//li/ul/li[14]/a</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">12</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#52</td></tr>
+<tr class="status_done" title="" alt=""><td>waitForPageToLoad</td><td>30000</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">904</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#53</td></tr>
+<tr class="status_passed" title="" alt=""><td>isTextPresent</td><td>Сравнение с другими АТС</td><td>&nbsp;</td><td>OK</td><td>true</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">30</td><td>com.mainPageTests.CheckForAvailabilityAdvantagesPagesTest#54</td></tr>
+<tr class="title"><td colspan="7">executing dismissSelenium()<span style="font-size:9px;font-family:arial,verdana,sans-serif;"></span></td></tr>
+<tr class="status_done" title="" alt=""><td>close</td><td>&nbsp;</td><td>&nbsp;</td><td>OK</td><td>OK</td><td title="time delta reporting is alpha and subject to change" alt="time delta reporting is alpha and subject to change">88</td><td>com.test.fw.SeleniumHelper#79</td></tr>
+</tbody></table></body></html>

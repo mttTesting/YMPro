@@ -8,29 +8,32 @@ import com.registration.tests.TestBaseReg;
 public class AddAndDeleteMenusTest extends TestBaseReg{
 	@Test
 	public void addAndDeleteMenusTest() throws Exception {
-		selenium.open("http://umagicpro-pp");
-		selenium.click("css=#administrator > span");
-		selenium.waitForPageToLoad("30000");
-		selenium.type("id=edit-name-1", "100138");
+		selenium.open("http://account.umagicpro-pp.lan"); //Вход на сайт http://umagicpro-pp.lan/
+		selenium.waitForPageToLoad("30000");	
+		selenium.type("id=edit-name-1", "100126"); //Ввод персональных данных(логин - 100126, пароль - 1234)
 		selenium.type("id=edit-pass-1", "1234");
-		selenium.click("id=edit-submit-1");
-		selenium.waitForPageToLoad("30000");
-		selenium.click("css=a.bPopup__eClose.instructions-close");
+		selenium.click("id=edit-submit-1"); //Нажатие на кнопку "Вход"
+		selenium.waitForPageToLoad("30000");	
+		
+		selenium.click("css=a.bPopup__eClose.instructions-close"); //Закрытие всплывающих окон
 		selenium.click("css=span.modal_cansel_button_text");
-		selenium.click("link=Настройки");
+		selenium.click("link=Настройки"); //Переход в меню "Настройки"->" Голосовое меню"
 		selenium.waitForPageToLoad("60000");
 		selenium.click("//div[4]/a/div");
 		selenium.waitForPageToLoad("30000");
-		selenium.click("css=span.bSongFiles_AddFileText");
-		Thread.sleep(15000);
-		selenium.click("id=edit-ivr-name");
+		selenium.click("css=span.bSongFiles_AddFileText"); //Клик по ссылке "Добавить меню"
+		Thread.sleep(7000);
+		
+		
+		
+		selenium.click("id=edit-ivr-name"); //Ввод названия и предназначения меню
 		selenium.type("id=edit-ivr-name", "Меню");
-		selenium.click("id=edit-submit");
-		Thread.sleep(30000);
-		AssertJUnit.assertTrue(selenium.isTextPresent("Меню"));
-		selenium.click("css=span.bSongdelete.bSongFiles_MarginControls");
-		selenium.click("css=span.phone_confirm_text");
+		selenium.click("id=edit-submit"); //Нажатие кнопки "Сохранить"
+		Thread.sleep(8000);
+		AssertJUnit.assertTrue(selenium.isTextPresent("Меню")); //Проверка наличия на странице текста с названием добавленного меню
+		selenium.click("css=span.bSongdelete.bSongFiles_MarginControls"); //Клик по пиктограмме удаления меню
+		selenium.click("css=span.phone_confirm_text"); //Подтверждение удаления
 		selenium.waitForPageToLoad("30000");	
-		AssertJUnit.assertFalse(selenium.isTextPresent("Меню"));
+		AssertJUnit.assertFalse(selenium.isTextPresent("Меню")); //Проверка отсутствия на странице текста с названием удаленного меню
 	}
 }

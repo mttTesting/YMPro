@@ -8,7 +8,7 @@ import com.registration.tests.TestBaseReg;
 public class CheckForAvaliabilityATSPageTest extends TestBaseReg{
 	@Test
 	public void  checkForAvaliabilityATSPageTest() throws Exception {
-		selenium.open("http://umagicpro-pp");
+		selenium.open("http://umagicpro-pp.lan");
 		selenium.click("//div[3]/div/div/div/div/span[2]/a");
 		selenium.waitForPageToLoad("30000");
 		AssertJUnit.assertTrue(selenium.isTextPresent("Полноценная АТС без расходов на «железо»"));	

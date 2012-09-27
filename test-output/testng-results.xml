@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="2" total="4" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3704748" started-at="2012-09-24T13:33:52Z" finished-at="2012-09-24T14:35:37Z">
+  <suite name="Default suite" duration-ms="18257" started-at="2012-09-27T10:31:33Z" finished-at="2012-09-27T10:31:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3704748" started-at="2012-09-24T13:33:52Z" finished-at="2012-09-24T14:35:37Z">
-      <class name="com.mainPageTests.RegistrationLicenseAgreementFlagOffTest">
-        <test-method status="SKIP" signature="setUp(java.lang.String)[pri:0, instance:com.mainPageTests.RegistrationLicenseAgreementFlagOffTest@6fd90825]" name="setUp" is-config="true" duration-ms="0" started-at="2012-09-24T18:35:37Z" finished-at="2012-09-24T18:35:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="registrationMobilePhoneConfirmationButtonTest()[pri:0, instance:com.mainPageTests.RegistrationLicenseAgreementFlagOffTest@6fd90825]" name="registrationMobilePhoneConfirmationButtonTest" duration-ms="1" started-at="2012-09-24T18:35:37Z" finished-at="2012-09-24T18:35:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationMobilePhoneConfirmationButtonTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.mainPageTests.RegistrationLicenseAgreementFlagOffTest@6fd90825]" name="tearDown" is-config="true" duration-ms="0" started-at="2012-09-24T18:35:37Z" finished-at="2012-09-24T18:35:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mainPageTests.RegistrationLicenseAgreementFlagOffTest -->
-      <class name="com.mainPageTests.RegistrationWrongVerificationCodeTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mainPageTests.RegistrationWrongVerificationCodeTest@3c5ebd39]" name="setUp" is-config="true" duration-ms="6136" started-at="2012-09-24T17:35:05Z" finished-at="2012-09-24T17:35:11Z">
+    <test name="Default test" duration-ms="18257" started-at="2012-09-27T10:31:33Z" finished-at="2012-09-27T10:31:51Z">
+      <class name="com.mainPageTests.CheckForAvaliabilityConnectionPagesTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mainPageTests.CheckForAvaliabilityConnectionPagesTest@1ed73856]" name="setUp" is-config="true" duration-ms="5807" started-at="2012-09-27T14:31:33Z" finished-at="2012-09-27T14:31:39Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -30,37 +16,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registrationStabilityOfNumbersTest()[pri:0, instance:com.mainPageTests.RegistrationWrongVerificationCodeTest@3c5ebd39]" name="registrationStabilityOfNumbersTest" duration-ms="16724" started-at="2012-09-24T17:35:11Z" finished-at="2012-09-24T17:35:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationStabilityOfNumbersTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mainPageTests.RegistrationWrongVerificationCodeTest@3c5ebd39]" name="tearDown" is-config="true" duration-ms="474" started-at="2012-09-24T17:35:28Z" finished-at="2012-09-24T17:35:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mainPageTests.RegistrationWrongVerificationCodeTest -->
-      <class name="com.notWorking.RegistrationMoscowAccountTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.notWorking.RegistrationMoscowAccountTest@59fd01f7]" name="setUp" is-config="true" duration-ms="6346" started-at="2012-09-24T17:33:52Z" finished-at="2012-09-24T17:33:59Z">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="registrationMoscowAccountTest()[pri:0, instance:com.notWorking.RegistrationMoscowAccountTest@59fd01f7]" name="registrationMoscowAccountTest" duration-ms="65873" started-at="2012-09-24T17:33:59Z" finished-at="2012-09-24T17:35:05Z">
+        <test-method status="FAIL" signature="checkForAvaliabilityConnectionTest()[pri:0, instance:com.mainPageTests.CheckForAvaliabilityConnectionPagesTest@1ed73856]" name="checkForAvaliabilityConnectionTest" duration-ms="11746" started-at="2012-09-27T14:31:39Z" finished-at="2012-09-27T14:31:51Z">
           <exception class="com.thoughtworks.selenium.SeleniumException">
             <message>
-              <![CDATA[Timed out after 30000ms]]>
+              <![CDATA[ERROR: Element //div[6]/div[2]/div/div/span/span/a not found]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.thoughtworks.selenium.SeleniumException: Timed out after 30000ms
+              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[6]/div[2]/div/div/span/span/a not found
 	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
 	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
 	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
-	at com.thoughtworks.selenium.DefaultSelenium.waitForPageToLoad(DefaultSelenium.java:678)
-	at com.notWorking.RegistrationMoscowAccountTest.registrationMoscowAccountTest(RegistrationMoscowAccountTest.java:38)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:193)
+	at com.mainPageTests.CheckForAvaliabilityConnectionPagesTest.checkForAvaliabilityConnectionTest(CheckForAvaliabilityConnectionPagesTest.java:12)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -90,108 +57,12 @@
           </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registrationMoscowAccountTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.notWorking.RegistrationMoscowAccountTest@59fd01f7]" name="tearDown" is-config="true" duration-ms="592" started-at="2012-09-24T17:35:05Z" finished-at="2012-09-24T17:35:05Z">
+        </test-method> <!-- checkForAvaliabilityConnectionTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mainPageTests.CheckForAvaliabilityConnectionPagesTest@1ed73856]" name="tearDown" is-config="true" duration-ms="693" started-at="2012-09-27T14:31:51Z" finished-at="2012-09-27T14:31:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.notWorking.RegistrationMoscowAccountTest -->
-      <class name="com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest@bea319b]" name="setUp" is-config="true" duration-ms="5926" started-at="2012-09-24T17:35:29Z" finished-at="2012-09-24T17:35:34Z">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="registrationMobilePhoneConfirmationButtonTest()[pri:0, instance:com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest@bea319b]" name="registrationMobilePhoneConfirmationButtonTest" duration-ms="1802367" started-at="2012-09-24T17:35:34Z" finished-at="2012-09-24T18:05:37Z">
-          <exception class="com.thoughtworks.selenium.SeleniumException">
-            <message>
-              <![CDATA[ERROR: Command timed out]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Command timed out
-	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
-	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
-	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
-	at com.thoughtworks.selenium.DefaultSelenium.waitForPageToLoad(DefaultSelenium.java:678)
-	at com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest.registrationMobilePhoneConfirmationButtonTest(RegistrationMobilePhoneConfirmationButtonTest.java:13)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
-	at org.testng.TestNG.run(TestNG.java:1030)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationMobilePhoneConfirmationButtonTest -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest@bea319b]" name="tearDown" is-config="true" duration-ms="0" started-at="2012-09-24T18:05:37Z" finished-at="2012-09-24T18:05:37Z">
-          <exception class="com.thoughtworks.selenium.SeleniumException">
-            <message>
-              <![CDATA[ERROR: Command timed out]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Command timed out
-	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
-	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
-	at com.unitedinternet.portal.selenium.utils.logging.LoggingCommandProcessor.doCommand(LoggingCommandProcessor.java:141)
-	at com.thoughtworks.selenium.DefaultSelenium.close(DefaultSelenium.java:427)
-	at com.test.fw.SeleniumHelper.dismissSelenium(SeleniumHelper.java:79)
-	at com.registration.tests.TestBaseReg.tearDown(TestBaseReg.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
-	at org.testng.TestNG.run(TestNG.java:1030)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.thoughtworks.selenium.SeleniumException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mainPageTests.RegistrationMobilePhoneConfirmationButtonTest -->
+      </class> <!-- com.mainPageTests.CheckForAvaliabilityConnectionPagesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

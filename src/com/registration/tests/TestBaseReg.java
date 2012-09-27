@@ -14,7 +14,7 @@ public class TestBaseReg {
 	public void setUp(@Optional String browser) throws Exception {
 		if (browser == null) browser = "*firefox";
 		selenium = (LoggingDefaultSelenium) SeleniumHelper.getSelenium(this.getClass().getSimpleName(),
-				"localhost", 4444, browser, "http://umagicpro-pp/");
+				"localhost", 4444, browser, "http://umagicpro-pp.lan/");
 				
 	}
 

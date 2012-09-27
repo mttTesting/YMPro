@@ -8,18 +8,19 @@ import com.registration.tests.TestBaseReg;
 public class FeedbackPageTest extends TestBaseReg{
 	@Test
 	public void feedbackPageTest() throws Exception {
-	selenium.open("http://umagicpro-pp");
-	selenium.click("css=#administrator > span");
-	selenium.waitForPageToLoad("30000");
-	selenium.type("id=edit-name-1", "100138");
-	selenium.type("id=edit-pass-1", "1234");
-	selenium.click("id=edit-submit-1");
-	selenium.waitForPageToLoad("30000");
-	selenium.click("css=a.bPopup__eClose.instructions-close");
-	selenium.click("//div[4]/a");
+		selenium.open("http://account.umagicpro-pp.lan"); //Вход на сайт http://umagicpro-pp.lan/
+		selenium.waitForPageToLoad("30000");	
+		selenium.type("id=edit-name-1", "100126"); //Ввод персональных данных(логин - 100126, пароль - 1234)
+		selenium.type("id=edit-pass-1", "1234");
+		selenium.click("id=edit-submit-1"); //Нажатие на кнопку "Вход"
+		selenium.waitForPageToLoad("30000");	
+		
+	selenium.click("css=a.bPopup__eClose.instructions-close"); //Закрытие всплывающих сообщений
+	selenium.click("//td[2]/div/span");
+	selenium.click("//div[4]/a"); //Переход в меню "Поддержка"->"Обратная связь"
 	selenium.click("//span[4]/a");
 	selenium.waitForPageToLoad("30000");
 	Thread.sleep(3000);
-	AssertJUnit.assertTrue(selenium.isTextPresent("Поддержка"));
+	AssertJUnit.assertTrue(selenium.isTextPresent("Поддержка")); //Проверка, присутствует ли на странице текст "Поддержка"
 }
 }
