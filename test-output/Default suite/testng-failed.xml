@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.mainPageTests.CheckForAvaliabilityConnectionPagesTest">
+      <class name="com.mainPageTests.checkForAvaliabilityPages.CheckForAvaliabilityForPartnersPageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="checkForAvaliabilityConnectionTest"/>
+          <include name="checkForAvaliabilityForPartnersPageTest"/>
         </methods>
-      </class> <!-- com.mainPageTests.CheckForAvaliabilityConnectionPagesTest -->
+      </class> <!-- com.mainPageTests.checkForAvaliabilityPages.CheckForAvaliabilityForPartnersPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
