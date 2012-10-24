@@ -8,21 +8,23 @@ import com.registration.tests.TestBaseReg;
 public class AddAndDeleteMenusTest extends TestBaseReg{
 	@Test
 	public void addAndDeleteMenusTest() throws Exception {
-		selenium.open("http://account.umagicpro-pp.lan"); //Вход на сайт http://umagicpro-pp.lan/
-		selenium.waitForPageToLoad("30000");	
-		selenium.type("id=edit-name-1", "100126"); //Ввод персональных данных(логин - 100126, пароль - 1234)
+		selenium.open("http://umagicpro-pp.rnd.mtt/"); //Вход на сайт http://umagicpro-pp/
+		selenium.waitForPageToLoad("30000");
+		selenium.click("link=Администратор");
+		selenium.waitForPageToLoad("30000");
+		selenium.type("id=edit-name-1", "100126"); //ввод логина и пароля
 		selenium.type("id=edit-pass-1", "1234");
-		selenium.click("id=edit-submit-1"); //Нажатие на кнопку "Вход"
-		selenium.waitForPageToLoad("30000");	
+		selenium.click("id=edit-submit-1"); //нажатие "Вход"
+		selenium.waitForPageToLoad("60000");
+		selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
 		
-		selenium.click("css=a.bPopup__eClose.instructions-close"); //Закрытие всплывающих окон
-		selenium.click("css=span.modal_cansel_button_text");
+		
 		selenium.click("link=Настройки"); //Переход в меню "Настройки"->" Голосовое меню"
 		selenium.waitForPageToLoad("60000");
 		selenium.click("//div[4]/a/div");
 		selenium.waitForPageToLoad("30000");
 		selenium.click("css=span.bSongFiles_AddFileText"); //Клик по ссылке "Добавить меню"
-		Thread.sleep(7000);
+		Thread.sleep(17000);
 		
 		
 		
