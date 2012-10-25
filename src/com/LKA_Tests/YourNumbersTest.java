@@ -16,10 +16,10 @@ public class YourNumbersTest  extends TestBaseReg{
 		selenium.type("id=edit-pass-1", "1234");
 		selenium.click("id=edit-submit-1"); //нажатие "Вход"
 		selenium.waitForPageToLoad("30000");
-		selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
+		//selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
 		
 		
-	selenium.click("//td[2]/div/span");
+	//selenium.click("//td[2]/div/span");
 	
 	selenium.click("link=Настройки");// Переход в меню "Настройки"
 	Thread.sleep(8000);

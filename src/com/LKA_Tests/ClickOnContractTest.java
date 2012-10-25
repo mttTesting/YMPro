@@ -16,9 +16,9 @@ public void clickOnContractTest () throws Exception {
 		selenium.type("id=edit-pass-1", "1234");
 		selenium.click("id=edit-submit-1"); //нажатие "Вход"
 		selenium.waitForPageToLoad("30000");
-		selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
+	//	selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
 		
-		selenium.click("css=span.modal_cansel_button_text");
+	//	selenium.click("css=span.modal_cansel_button_text");
 		
 		selenium.click("//div[5]/div[2]/span/a"); //Нажатие ссылки " Оформить"
 		Thread.sleep(3000);

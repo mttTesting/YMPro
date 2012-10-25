@@ -26,9 +26,9 @@ public class PhoneAddNumberToContactTest extends TestBaseReg{
 		Thread.sleep(4000);
 		selenium.click("id=edit-submit");//Нажатие кнопки "Сохранить"
 		Thread.sleep(4000);
-		selenium.click("//dl[3]/div/div/div[4]");//Звонок по выбранному номеру
+		selenium.click("//dd[2]/a");//Звонок по выбранному номеру
 		Thread.sleep(14000);
-		selenium.click("css=span.ui-icon.ui-icon-closethick");
+		//selenium.click("css=span.ui-icon.ui-icon-closethick");
 		selenium.click("//div[4]/nobr/a");
 		Thread.sleep(4000);
 		selenium.click("//tr[5]/td[2]/a");

@@ -16,9 +16,9 @@ public void clickOnBalanceTest () throws Exception {
 		selenium.type("id=edit-pass-1", "1234");
 		selenium.click("id=edit-submit-1"); //нажатие "Вход"
 		selenium.waitForPageToLoad("30000");
-		selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
+	//	selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
 		
-		selenium.click("css=span.modal_cansel_button_text");
+	//	selenium.click("css=span.modal_cansel_button_text");
 		selenium.click("css=a.mGray2.active"); //Клик по изображениию-аватару.
 		selenium.waitForPageToLoad("30000");
 		AssertJUnit.assertTrue(selenium.isTextPresent("Структура расходов")); //Проверить, что на открытой странице есть текст  “Структура расходов “

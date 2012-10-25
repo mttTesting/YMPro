@@ -16,9 +16,9 @@ public class DetalizationPageTest  extends TestBaseReg{
 		selenium.type("id=edit-pass-1", "1234");
 		selenium.click("id=edit-submit-1"); //нажатие "¬ход"
 		selenium.waitForPageToLoad("30000");
-		selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
-		selenium.click("//td[2]/div/span");
-		selenium.click("css=span.modal_cansel_button_text");	
+		//selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
+		//selenium.click("//td[2]/div/span");
+		//selenium.click("css=span.modal_cansel_button_text");	
 		
 		selenium.click("link=ѕлатежи");
 		Thread.sleep(3000);

@@ -26,7 +26,7 @@ public class PhoneAddFiveNumbersForContactTest extends TestBaseReg{
 		selenium.type("id=edit-contact-telephone4", "004");
 		selenium.type("id=edit-contact-telephone5", "005");
 		selenium.click("id=edit-save");//Нажатие кнопки "Сохранить"
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		selenium.click("//div[@onclick='callByContacts(\"005\"); return false;']");//Осуществление вызовов по 5 номерам
 		Thread.sleep(12000);
 		selenium.click("css=span.ui-icon.ui-icon-closethick");
@@ -41,7 +41,7 @@ public class PhoneAddFiveNumbersForContactTest extends TestBaseReg{
 		selenium.click("css=span.ui-icon.ui-icon-closethick");
 		selenium.click("link=Редактировать контакты");//Нажатие на пункт "Редактировать контакты" в меню настроек вебфона
 		Thread.sleep(5000);
-		selenium.click("xpath=(//a[contains(text(),'уд.')])[4]");//Удаление контакта
+		selenium.click("//td[2]/a[2]");//Удаление контакта
 		selenium.click("id=edit-submit");
 		Thread.sleep(3000);
 	}

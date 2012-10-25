@@ -16,9 +16,9 @@ public class FilesFreeSpacePageTest  extends TestBaseReg{
 		selenium.type("id=edit-pass-1", "1234");
 		selenium.click("id=edit-submit-1"); //нажатие "Вход"
 		selenium.waitForPageToLoad("30000");
-		selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
+		//selenium.click("css=a.bPopup__eClose.instructions-close");//закрытие всплывающих окон
 		
-	selenium.click("//td[2]/div/span");
+	//selenium.click("//td[2]/div/span");
 	selenium.click("//div[4]/a"); //Переход в меню "Файлы"->"Все файлы"
 	selenium.click("//div/span[3]/a");
 	selenium.waitForPageToLoad("30000");
